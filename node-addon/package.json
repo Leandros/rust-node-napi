@@ -1,0 +1,17 @@
+{
+  "package": "node-addon",
+  "devDependencies": {
+    "@napi-rs/cli": "^1.0.0",
+    "@types/node": "*",
+    "ts-node": "^10.9.1",
+    "typescript": ">=2.7"
+  },
+  "napi": {
+    "name": "rust-node-napi"
+  },
+  "scripts": {
+    "start": "ts-node -T ./index.ts",
+    "build": "napi build --release --cargo-cwd ..",
+    "build:debug": "napi build"
+  }
+}

@@ -1,0 +1,5 @@
+/target
+node_modules
+*.node
+.pnpm-debug.log
+node-addon/*.js
